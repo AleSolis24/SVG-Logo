@@ -68,22 +68,19 @@ class SVGLOGO {
         if (this.shapeLayout instanceof Triangle) {
             return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="0,200 300,200 150,0" fill="${this.shapeLayout.getColor()}" />
-                <text x="150" y="100" text-anchor="middle" fill="${this.textColor}" font-size="45">${this.text}</text>
+                <text x="150" y="135" text-anchor="middle" fill="${this.textColor}" font-size="45">${this.text}</text>
               </svg>`;
         } else if (this.shapeLayout instanceof Circle) {
             return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="150" cy="100" r="50" fill="${this.shapeLayout.getColor()}" />
-                <text x="150" y="100" text-anchor="middle" fill="${this.textColor}" font-size="45">${this.text}</text>
+                <circle cx="150" cy="100" r="100" fill="${this.shapeLayout.getColor()}" />
+                <text x="150" y="115" text-anchor="middle" fill="${this.textColor}" font-size="45">${this.text}</text>
               </svg>`;
         } else if (this.shapeLayout instanceof Square) {
             return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0" y="0" width="300" height="200" fill="${this.shapeLayout.getColor()}" />
-                <text x="150" y="100" text-anchor="middle" fill="${this.textColor}"font-size="45">${this.text}</text>
+                <text x="150" y="100" text-anchor="middle" fill="${this.textColor}" font-size="45">${this.text}</text>
               </svg>`;
-        } else {
-            console.error('Invalid shape type.');
-            return null;
-        }
+        } 
     }
 }
 // this is the function that will allow the SVG to be created 

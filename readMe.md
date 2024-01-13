@@ -17,8 +17,8 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
-## Screenshot
-![Alt text](<>)
+## Preview
+<video src="Recording%202024-01-13%20170343.mp4" controls title="Title"></video>
 
 
 ## Testing 
@@ -28,4 +28,4 @@ to test my application please do a "npm test"
 https://github.com/AleSolis24/SVG-Logo
 
 ## Sources
-help from xpert learning assistant 
+Help from xpert learning assistant 
