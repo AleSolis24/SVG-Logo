@@ -9,7 +9,7 @@ class SVGLOGO {
         this.shapeLayout = null;
         this.shapeColor = "";
     }
-    //this is seeting up the prompt to allow the user to answer the questions when using node 
+    // this is seeting up the prompt to allow the user to answer the questions when using node 
     async creatingShape() {
         const userInput = await inquirer.prompt([
             {
